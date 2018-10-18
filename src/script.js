@@ -1,3 +1,4 @@
+import chalk from 'chalk';
 import { dog1, dog2 } from './data/dogData';
 
 console.log('---------');

@@ -6,6 +6,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _chalk = require('chalk');
+
+var _chalk2 = _interopRequireDefault(_chalk);
+
 var _animal = require('./animal');
 
 var _animal2 = _interopRequireDefault(_animal);
@@ -34,11 +38,11 @@ var Dog = function (_Animal) {
     key: 'info',
     value: function info() {
       this.greet();
-      console.log('\u540D\u524D\u306F' + this.name + '\u3067\u3059');
-      console.log('\u72AC\u7A2E\u306F' + this.breed + '\u3067\u3059');
-      console.log(this.age + '\u6B73\u3067\u3059');
+      console.log(_chalk2.default.yellow('\u540D\u524D\u306F' + this.name + '\u3067\u3059'));
+      console.log(_chalk2.default.yellow('\u72AC\u7A2E\u306F' + this.breed + '\u3067\u3059'));
+      console.log(_chalk2.default.cyan(this.age + '\u6B73\u3067\u3059'));
       var humanAge = this.getHumanAge();
-      console.log('\u4EBA\u9593\u5E74\u9F62\u3067' + humanAge + '\u6B73\u3067\u3059');
+      console.log(_chalk2.default.cyan('\u4EBA\u9593\u5E74\u9F62\u3067' + humanAge + '\u6B73\u3067\u3059'));
     }
   }, {
     key: 'getHumanAge',
