@@ -1,3 +1,3 @@
-import dog from './dogData';
+import dog from './data/dogData';
 
 dog.info();

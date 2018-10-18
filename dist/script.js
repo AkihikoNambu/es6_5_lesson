@@ -1,6 +1,6 @@
 'use strict';
 
-var _dogData = require('./dogData');
+var _dogData = require('./data/dogData');
 
 var _dogData2 = _interopRequireDefault(_dogData);
 
