@@ -1,8 +1,4 @@
-'use strict';
+"use strict";
 
-var _dogData = require('./data/dogData');
-
-console.log('---------------');
-_dogData.dog1.info();
-console.log('---------------');
-_dogData.dog2.info();
+var dog = new Dog("レオ", 4, "チワワ");
+dog.info();
