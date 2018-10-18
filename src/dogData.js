@@ -1,4 +1,4 @@
 import Dog from './dog';
 
-const dog = new Dog("レオ", 4, "チワワ");
-export default dog;
+export const dog1 = new Dog("レオ", 4, "チワワ");
+export const dog2 = new Dog("ベン", 2, "プードル");
